@@ -1,0 +1,41 @@
+{
+  "name": "etfeedbackapp",
+  "version": "0.0.1",
+  "main": "public/javascripts/app.js",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components"
+  ],
+  "dependencies": {
+    "backbone": "~1.0.0",
+    "backbone.marionette": "~1.1.0",
+    "underscore": "~1.5.2",
+    "bootstrap": "~3.0.0",
+    "console-polyfill": "~0.1.0",
+    "jquery": "~2.0.3",
+    "moment": "~2.2.1"
+  },
+  "overrides": {
+    "backbone": {
+      "dependencies": {
+        "underscore": "*",
+        "jquery": "*"
+      },
+      "main": "backbone.js"
+    },
+    "bootstrap": {
+      "dependencies": {
+        "jquery": "*"
+      },
+      "main": [
+        "dist/js/bootstrap.js",
+        "dist/css/bootstrap.css",
+        "dist/fonts/*"
+      ]
+    },
+    "underscore": {
+      "main": "underscore.js"
+    }
+  }
+}
