@@ -14,7 +14,8 @@
     "bootstrap": "~3.0.0",
     "console-polyfill": "~0.1.0",
     "jquery": "~2.0.3",
-    "moment": "~2.2.1"
+    "moment": "~2.2.1",
+    "bootstrap-switch": "*"
   },
   "overrides": {
     "backbone": {
@@ -32,6 +33,15 @@
         "dist/js/bootstrap.js",
         "dist/css/bootstrap.css",
         "dist/fonts/*"
+      ]
+    },
+    "bootstrap-switch": {
+      "dependencies": {
+        "jquery": "*"
+      },
+      "main": [
+        "static/js/bootstrap-switch.js",
+        "static/stylesheets/bootstrap-switch.css"
       ]
     },
     "underscore": {
